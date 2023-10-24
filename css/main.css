@@ -1,0 +1,128 @@
+@keyframes title-flare-anim{
+    from{transform: rotate(-0.04turn);}
+    to{transform: rotate(-0.06turn);}
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-4px)
+    }
+  }
+
+body{
+    font-family: 'Courier New';
+    line-height: 1.6;
+    color: #f3f3f3;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%); */
+    background-color: #111;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.center-screen{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-weight: bold;
+}
+
+a{
+    font-size: 0.8em;
+}
+
+.section-title{
+    font-size: 5vw;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.title-flare{
+    transform: rotate(-0.06turn);
+    font-size: 1vw;
+    position: absolute;
+    bottom: 15%;
+    right: -10%;
+    color: yellow;
+    
+    animation-name: title-flare-anim;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.page-floater{
+    position: absolute;
+    
+}
+
+.floater-tl{
+    top: 1vh;
+    left: 1vw;
+}
+
+.floater-bl{
+    bottom: 1vh;
+    left: 1vw;
+}
+
+.floater-br{
+    bottom: 1vh;
+    right: 1vw;
+}
+
+.floater-ele{
+    /* background-color: rgba(250, 235, 215, 0.247); */
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    break-inside: avoid;
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:#e0e0e0;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+    user-select: none;
+}
+
+.codebox{
+    display:block;
+    break-inside: avoid;
+    width:100%;
+    padding:16px;
+    margin-top:16px;
+    margin-bottom:24px;
+
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:#e0e0e0;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+
+.wavy-text{
+    position:relative;
+    
+}
+
+.wavy-text span{
+    display: inline-block;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    font-weight: bold;
+    font-size: 2em;
+}
