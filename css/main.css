@@ -99,6 +99,19 @@ a{
     user-select: none;
 }
 
+.download-btn{
+    padding: 5px 8px 5px 8px;
+    border-radius: 10px;
+    border-width:4px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:#1576a3;
+    background-color: #f3f3f3;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 .codebox{
     display:block;
     break-inside: avoid;

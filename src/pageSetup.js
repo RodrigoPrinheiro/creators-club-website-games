@@ -1,7 +1,7 @@
 let page = 0;
 let pageCounter;
 
-const pages = ["title.html", "engine.html", "climbo.html"]
+const pages = ["title.html", "engine.html", "cimbo.html"]
 
 document.addEventListener("keydown", keypressed, false)
 
@@ -63,4 +63,9 @@ function keypressed(event)
             forward();
             break;
     }
+}
+
+function downloadCart()
+{
+
 }
